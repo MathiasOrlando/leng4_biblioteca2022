@@ -11,10 +11,10 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 		<jta-data-source>java:/jboss/datasources/BibliotecaDS</jta-data-source>
 		<properties>
 			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.dialect"
+			
+<!--<property name="hibernate.dialect"
 				value="org.hibernate.dialect.PostgreSQLDialect" />
-			<!-- Otras opciones -->
-
+			 Otras opciones -->
 		</properties>
 	</persistence-unit>
 </persistence>

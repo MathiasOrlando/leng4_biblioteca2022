@@ -2,6 +2,9 @@ package com.biblioteca.entidad;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -9,6 +12,10 @@ import javax.persistence.Table;
 
 
 public class Ciudad {
+	@Id
+	
+	// Para cod serial
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	@Column(name = "ciu_codigo")
 	private Integer codigo;

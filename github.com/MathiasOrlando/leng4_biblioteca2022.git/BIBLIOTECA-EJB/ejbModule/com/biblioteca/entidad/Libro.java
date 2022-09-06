@@ -2,12 +2,18 @@ package com.biblioteca.entidad;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "libros")
 
 public class Libro {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	@Column(name = "lib_codigo")
 	private Integer codigo;
